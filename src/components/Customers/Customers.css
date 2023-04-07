@@ -1,0 +1,233 @@
+table,
+thead,
+tbody,
+tr,
+th {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-collapse: inherit;
+  border-spacing: 0;
+  border-color: inherit;
+  vertical-align: inherit;
+  text-align: left;
+  font-weight: inherit;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+}
+
+.App-customers {
+  background: #FAFBFF;
+  width: 100%;
+  padding-left: 71px;
+}
+
+.App-customers-greeting {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 36px;
+  color: #000000;
+  margin: 41px 0 51px 0;
+}
+
+.App-customers-greeting-icon {
+  position: relative;
+  top: -3px;
+  font-size: 1.313rem;
+}
+
+.App-customers-cnt {
+  max-width: 968px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  border-radius: 30px;
+}
+
+.App-customers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 53px 35px 38px;
+}
+
+.App-customers-header h2 {
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 33px;
+  color: #000000;
+  margin: 0px 0px 4px 0px;
+}
+
+.App-customers-header span {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #16C098;
+}
+
+.App-customers-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-customers-table-header {
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.App-customers-table-header-cnt {
+  display: flex;
+  width: 100%;
+  padding-left: 38px;
+}
+
+.App-customers-table-header-cnt th  {
+  width: 100%;
+  padding: 0 0 14px 0;
+  text-align: left;
+}
+
+.App-customers-table-header-cnt span  {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #B5B7C0;
+}
+
+.App-customers-table-header-cnt th:nth-child(1) {
+  max-width: 172px;
+}
+
+.App-customers-table-header-cnt th:nth-child(2) {
+  max-width: 131px;
+}
+
+.App-customers-table-header-cnt th:nth-child(3) {
+  max-width: 156px;
+}
+
+.App-customers-table-header-cnt th:nth-child(4) {
+  max-width: 207px;
+}
+
+.App-customers-table-header-cnt th:nth-child(5) {
+  max-width: 140px;
+}
+
+.App-customers-table-header-cnt th:nth-child(6) {
+  max-width: 80px;
+  text-align: center;
+}
+
+.ActiveButton {
+  background: rgba(22, 192, 152, 0.38);
+  border: 1px solid #00B087;
+  color: #008767 !important;
+}
+
+.InactiveButton {
+  background: #FFC5C5;
+  border: 1px solid #DF0404;
+  color: #DF0404 !important;
+}
+
+.App-customers-table-body {
+  width: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+
+.App-customers-table-body .App-customers-table-row:nth-child(4),
+.App-customers-table-body .App-customers-table-row:nth-child(5),
+.App-customers-table-body .App-customers-table-row:nth-child(6) {
+  padding: 20px 0px;
+}
+
+.App-customers-table-body .App-customers-table-row:nth-child(7),
+.App-customers-table-body .App-customers-table-row:nth-child(8) {
+  padding: 19px 0px;
+}
+
+
+.App-customers-table-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px 40px 38px;
+}
+
+.App-customers-table-pagination {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  left: -3px;
+}
+
+.App-customers-table-pagination span {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #404B52;
+  background: #F5F5F5;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+  width: 23px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-customers-table-pagination-arrow {
+  width: 26px;
+}
+
+.App-customers-table-pagination-active {
+  background: #5932EA !important;
+  color: #FFFFFF !important;
+}
+
+.App-customers-table-pagination-dots {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  width: auto !important;
+}
+
+.App-customers-table-footer > span {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #B5B7C0;
+}
+
+@media(max-width: 950px) {
+  .App-customers {
+    padding: 0px;
+    width: calc(100% - 20px);
+  }
+
+  .App-customers-header {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .App-customers-table {
+    overflow-x: scroll;
+  }
+
+  .App-customers-table-header, .App-customers-table-body {
+    width: 968px;
+  }
+
+  .App-customers-table-footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

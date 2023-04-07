@@ -1,0 +1,131 @@
+.App-panel {
+  max-width: 250px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 28px;
+  height: 1198px;
+}
+
+.App-panel-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo-version {
+  font-weight: 500;
+  font-size: 0.625rem;
+  line-height: 15px;
+  letter-spacing: -0.01em;
+  color: #838383;
+  position: relative;
+  top: -6px;
+}
+
+.App-logo-cnt {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  margin: 36px 0 51px 0;
+}
+
+.App-panel-items {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.App-panel-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.App-panel-item > img{
+  height: 10px;
+}
+
+.App-panel-item-active {
+  background: #5932EA;
+  border-radius: 8px;
+  padding: 11px 12px;
+}
+
+.App-panel-item-active span {
+  color: #FFFFFF !important;
+  position: relative;
+  top: 2px;
+}
+
+.Panel-item-content {
+  display: flex;
+  gap: 14px;
+}
+
+.App-panel-items .App-panel-item:nth-child(3),
+.App-panel-items .App-panel-item:nth-child(4),
+.App-panel-items .App-panel-item:nth-child(5),
+.App-panel-items .App-panel-item:nth-child(6) {
+  margin-top: -2px;
+}
+
+.Panel-item-content span {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #9197B3;
+  position: relative;
+  top: 2px;
+}
+
+.App-panel-bottom {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 76px;
+}
+
+.App-panel-bottom-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-panel-bottom-name {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-top: 2px;
+}
+
+.App-panel-bottom-role {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.App-panel-bottom-avatar {
+  width: 42px;
+  height: 42px;
+}
+
+.App-panel-bottom-avatar img {
+  width: 100%;
+  height: auto;
+}
+
+@media(max-width: 950px) {
+  .App-panel {
+    height: auto;
+    padding: 0px;
+    max-width: calc(100% - 40px);
+    gap: 40px;
+  }
+}

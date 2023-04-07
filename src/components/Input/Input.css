@@ -1,0 +1,34 @@
+.App-customers-input {
+  width: 216px;
+  height: 38px;
+  position: relative;
+}
+
+.App-customers-input:before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  background: url("/public/assets/icons/search.svg") center/cover;
+  top: calc(50% - 11px);
+}
+
+.App-customers-input input {
+  width: 174px;
+  height: 36px;
+  background: #F9FBFF;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 40px;
+}
+
+.App-customers-input input::placeholder {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #B5B7C0;
+  font-family: 'Poppins';
+}
